@@ -1,0 +1,211 @@
+.datepanel{
+	background-color:#fff;
+	border:1px solid #BEBEBE;
+	box-shadow:0 1px 5px #ccc;
+	padding:5px;
+}
+.datepanel-wrapper {
+}
+.datepanel-wrapper a {
+	outline:none;
+	color:#000;
+}
+.datepanel-head {
+	height:25px;
+	text-align:center;
+	position:relative;
+}
+.datepanel-head a {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	font-size:14px;
+	vertical-align:middle;
+	height:23px;
+	line-height:23px;
+	text-decoration:none;
+	border:1px solid transparent;
+	_border-color:#fff;
+}
+* html .datepanel-head a {
+	height /**/:25px;
+}
+.datepanel-head .datepanel-prev,
+.datepanel-head .datepanel-next{
+	width:38px;
+	_width:40px;
+	position:absolute;
+	top:0;
+	font-size:18px;
+	*line-height:21px;
+}
+.datepanel-head .datepanel-prev{
+	left:0;
+}
+.datepanel-head .datepanel-up {
+	padding:0 5px;
+}
+.datepanel-head .datepanel-next {
+	right:0;
+}
+.datepanel-head a:hover {
+	color:#06c;
+	border-color:#B9D7FC;
+	background-color:#EFF6FF;
+}
+.datepanel-body {
+	position:relative;
+	overflow:hidden;
+}
+.datepanel-month,
+.datepanel-year,
+.datepanel-decade {
+	overflow:hidden;
+	position:relative;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	display:none;
+}
+.datepanel-week {
+	height:22px;
+	line-height:22px;
+}
+.datepanel-week b {
+	display:inline-block;
+	color:#000;
+	font-weight:normal;
+	font-size:14px;
+	*display:inline;
+	*zoom:1;
+	width:28px;
+	text-align:center;
+}
+.datepanel-entry {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	background-color:white;
+}
+* html .datepanel-week {
+	display:inline;
+}
+* html .datepanel-date {
+	display:inline;
+}
+.datepanel-focus {
+	
+}
+.datepanel-body .datepanel-item {
+	font-size:14px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:47px;
+	height:45px;
+	text-align:center;
+	line-height:45px;
+	cursor:default;
+	text-decoration:none;
+	color:#000;
+	border:1px solid transparent;
+	_border-color:#fff;
+	border-radius:2px;
+}
+* html .datepanel-body .datepanel-item {
+	width /**/: 49px;
+	height /**/: 47px;
+}
+.datepanel-date .datepanel-item {
+	width:16px;
+	height:16px;
+	text-align:right;
+	padding:1px 5px;
+	line-height:16px;
+}
+* html .datepanel-date .datepanel-item {
+	height /**/: 20px;
+	width /**/: 28px;
+}
+.datepanel-body .datepanel-item:hover {
+	color:#06c;
+	border-color:#B9D7FC;
+	background-color:#EFF6FF;
+}
+.datepanel-entry .datepanel-item.datepanel-today {
+	color:#06c;
+	border-color:#06c;
+}
+.datepanel-entry .datepanel-item.datepanel-focus {
+	border-color:#84ACDD;
+	background-color:#D4E7FF;
+	color:#005FB6;
+}
+.datepanel-entry .datepanel-item.datepanel-prev,
+.datepanel-entry .datepanel-item.datepanel-next {
+	color:#aaa;
+}
+.datepanel-foot {
+	margin-top:1px;
+	line-height:25px;
+}
+.datepanel-foot .datepanel-time {
+	font-size:14px;
+}
+.datepanel-foot .datepanel-time-label {
+	width:55px;
+	text-align:center;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.datepanel-foot .datepanel-time-value {
+	border:1px solid #ccc;
+	margin-left:5px;
+	line-height:22px;
+	vertical-align: middle;
+}
+.datepanel-foot .datepanel-time input {
+	outline:none;
+	width:35px;
+	_width:37px;
+	border:0;
+	border:none;
+	padding:0;
+	margin:0;
+}
+.datepanel-foot .datepanel-time b {
+	vertical-align: middle;
+}
+.datepanel-button {
+	text-align:right;
+	height:27px;
+	line-height:25px;
+}
+.datepanel-button .datepanel-item {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle;
+	color:#000000;
+	font-size:14px;
+	border-color:#ccc #bbb #A0A0A0;
+	border-style:solid;
+	border-width:1px;
+	margin:0 2px 0 5px;
+	padding:3px 8px;
+	height:16px;
+	line-height:16px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #FFFFFF;
+	background:-moz-linear-gradient(center top, #F9F9F9, #E3E3E3);
+	background:-webkit-gradient(linear,0% 40%,0% 70%,from(#F9F9F9),to(#E3E3E3));
+	filter: alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#F9F9F9,endcolorstr=#E3E3E3,gradientType=0);
+	background:-o-linear-gradient(top, #F9F9F9, #E3E3E3);
+	border-radius:3px;
+}
+* html .datepanel-button .datepanel-item { height /**/: 24px; }
+.datepanel-button .datepanel-item:active {
+	box-shadow:inset 0 0 5px #9D9D9D;
+	color:#444;
+}

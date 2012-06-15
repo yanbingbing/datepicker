@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>日历</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="datepicker.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<p>
+		示例一: <input onfocus="DatePicker(this)" value="" />
+		</p>
+		<p>
+		示例二: <input onfocus="DatePicker(this, {format:'yyyy-MM-dd HH:mm:ss'})" value="" />
+		</p>
+		<p>
+		示例三: 
+		<input id="date1" value="" />
+		<a href="javascript:;" onclick="DatePicker(this, {value:document.getElementById('date1')})">选择</a>
+		</p>
+		<p>
+		示例四: 
+		<input value="2011年8月19号" onfocus="DatePicker(this, {format:'yyyy年M月d号'})" />
+		</p>
+		<p>
+		示例五: 
+		<input value="2011年8月19号 12点am" onfocus="DatePicker(this, {format:'yyyy年M月d号 hh点tt'})" />
+		</p>
+		<div id="elem"></div>
+		<script>
+			var a = new DatePanel({place:document.getElementById('elem'),format:'yyyy-MM-dd'});
+			a.bind('MONTH_PREPARED', function(){
+				console.info(arguments);
+			});
+			a.create();
+		</script>
+	</body>
+</html>
